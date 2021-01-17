@@ -72,6 +72,13 @@ a:hover{
   font-size: 1.8vw;
 }
 
+.item{
+  font-size: 3vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;
+  font-style: normal;
+}
+
 #hand{
   width: 20%;
 }
