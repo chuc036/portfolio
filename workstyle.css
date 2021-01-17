@@ -1,0 +1,121 @@
+body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .big{
+    font-size: 3vw;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+  }
+  
+  #bottomtext{
+    font-size: 3vw;
+    position: fixed;
+    bottom: 0%;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .description{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-top: 5px;
+  }
+  
+  .blink{
+    display: inline-block;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  
+  a{
+    font-size: 2.5vw;;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 800;
+    color: #f22c3c;
+  }
+  
+  a:hover{
+    color: fuchsia;
+  }
+  
+  .pic{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+  }
+
+  
+  .links{
+    font-size: 1.8vw;
+  }
+
+  #head{
+    width: 10%;
+  }
+  
+  #web1{
+      width: 20%;
+  }
+
+  #poster{
+        width: 30%;
+  }
+
+  #smashing{
+      width: 30%;
+  }
+
+  #joe{
+      width: 20%;
+  }
+
+  #baldwin{
+    width: 30%;
+}
+
+#vazifdar{
+    width: 30%;
+}
+
+  @keyframes blink{
+
+    0%{
+      color: black;
+      letter-spacing: 0px;
+    }
+    100%{
+      color: #f22c3c;
+      letter-spacing: 3px;
+    }
+    
+    }
+    
+    @keyframes spin{
+      100%{
+        transform: rotatey(360deg);
+      }
+    }
