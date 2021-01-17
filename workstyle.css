@@ -59,8 +59,8 @@ body{
   
   .pic{
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 8%;
+    margin-bottom: 8%;
     animation-name: spin;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -97,9 +97,13 @@ body{
     width: 30%;
 }
 
+
+
 #vazifdar{
     width: 30%;
 }
+
+
 
   @keyframes blink{
 
