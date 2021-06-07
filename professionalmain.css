@@ -1,0 +1,270 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y:hidden;
+   
+  }
+  
+  .icon{
+    position: absolute;
+    margin-top: 3%;
+    width: 10%;
+    left: 88%;
+  }
+
+  .menu{
+    font-size: 2vw;
+    position: absolute;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 102%;
+   bottom: 54%;
+    z-index: 1;
+    width: 8%
+  }
+
+  #about{
+      padding: 5px;
+  }
+
+  #editorial{
+    padding: 5px;
+    }
+
+    #web{
+    padding: 5px;
+    }
+
+    #misc{
+    padding: 5px;
+    }
+
+  #about:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+
+  #editorial:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+
+  #web:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+
+  #misc:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+  
+  #hand{
+    width: 80%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .bigtext{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      line-height: 90%;
+      font-size: 13vw;
+      position: absolute;
+      margin-left: 2%;
+      bottom: 8%;
+      cursor: default;
+  }
+
+  #dot{
+      background-color: black;
+      width: 50px;
+      height: 50px;
+      color: black;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  #dot:hover{
+      width:100px;
+      height: 100px;
+      background-color: blue;
+      transition: 1s ease-in-out;
+  }
+
+  .statement{
+      font-size: 3.5vw;;
+      position: absolute;
+      bottom: 10%;
+      color: blue;
+      font-style: italic;
+      text-align: center;
+      font-weight: 800;
+      transform: rotate(-10deg);
+      margin-left: 50%;
+      bottom: 8%;
+      animation-name: throb;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+
+  }
+
+  
+  @keyframes spin{
+    100%{
+      transform: rotatey(360deg);
+    }
+  }
+
+  @keyframes throb{
+      100%{
+          font-size: 3vw;
+      }
+  }
+
+  @keyframes slide{
+      0%{
+          left: 100%;
+      }
+      100%{
+          left: 56%;
+      }
+  }
+
+ #aboutPg{
+    position: absolute;
+    left: 56%;
+    top: 20%;
+    width: 45%;
+    z-index: 1;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    display: none;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: once;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+ }
+
+ #portrait{
+    width: 35%;
+}
+
+ .textblock{
+     width: 45%;
+     display: inline-block;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.02vw;
+     padding: 20px;
+     position: absolute;
+     left: 38%;
+     top: 0%;
+ }
+
+ #editorialPg{
+     width: 50%;
+     left: 40%;
+     top: 5%;
+     position: absolute;
+     display: none;
+ }
+
+ #commandPg{
+   width: 60%;
+   height: 95%;
+   overflow-y: auto;
+   position: absolute;
+   left: 45%;
+   top: 2%;
+   display: none;
+   cursor: ns-resize;
+ }
+
+ #joePg{
+  width: 60%;
+  height: 95%;
+  overflow-y: auto;
+  position: absolute;
+  left: 45%;
+  top: 2%;
+  display: none;
+  cursor: ns-resize;
+ }
+
+ #webPg{
+  width: 50%;
+  left: 40%;
+  top: 5%;
+  position: absolute;
+  display: none;
+}
+
+ .imgLink{
+     width: 55%;
+     padding: 10px;
+     text-align: center;
+     display: inline-block;
+     font-size: 1.3vw;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .imgLink:hover{
+   color:blue;
+   cursor: pointer;
+ }
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+ #posterbtn{
+     width: 30%;
+    
+ }
+
+.projtitle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+
+.projtext{
+  width: 70%;
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:1%;
+  margin-bottom:1%;
+}
+
+.projimg{
+  width: 30%;
+  padding: 15px;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.projimgBig{
+  width: 58%;
+  padding: 15px;
+  margin-top:2%;
+  margin-bottom:2%;
+  margin: 0 auto
+}
