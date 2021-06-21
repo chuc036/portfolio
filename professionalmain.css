@@ -236,8 +236,8 @@ a:hover{
 }
 
  #posterbtn{
-     width: 30%;
-    
+     width: 55%;
+    padding: 15px;
  }
 
 .projtitle{
@@ -271,10 +271,8 @@ a:hover{
 
 #miscPg{
   width: 50%;
-  height: 95%;
   left: 40%;
   top: 5%;
-  overflow-y: auto;
   position: relative;
   display: none;
 }
