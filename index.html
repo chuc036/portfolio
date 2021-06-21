@@ -144,6 +144,22 @@
 
 <!--MISC-->
 
+<div id="miscPg">
+
+<div id="render1" class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h9d2JBTAsGg" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="render2" class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oq78L072pIM" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+</div>
+
 
 
 
@@ -181,11 +197,14 @@ $("#about").click(function(){
 
         $("#editorialPg").css('opacity', '50%')
         $("#webPg").css('opacity', '50%')
+        $("#miscPg").css('opacity','50%')
 
     }else{  
 
         $("#editorialPg").css('opacity', '100%')
         $("#webPg").css('opacity', '100%')
+        $("#miscPg").css('opacity', '100%')
+
 
         $("#about").css('background-color','transparent')
         $("#about").css('color','black')
@@ -207,21 +226,29 @@ $("#editorial").click(function(){
     $("#editorialPg").toggle()
 
         if($('#editorialPg').is(':visible')){
-
+            //highlight
             $("#editorialPg").css('opacity', '100%')
             $("#webPg").css('opacity', '100%')
 
             $("#editorial").css('background-color','blue')
             $("#editorial").css('color','white')
 
+            //no other categories are open
              $("#aboutPg").css('display', 'none')
+             $("#miscPg").css('display','none')
              $("#webPg").css('display', 'none')
 
+
+             //no projects
              $("#joePg").css('display','none')
             $('#commandPg').css('display','none')
 
+
+            //no states
              $("#web").css('background-color','transparent')
              $("#web").css('color','black')
+             $("#misc").css('background-color','transparent')
+             $("#misc").css('color','black')
 
              $("#about").css('background-color','transparent')
             $("#about").css('color','black')
@@ -258,8 +285,11 @@ $("#web").click(function(){
 
         $("#editorial").css('background-color','transparent')
         $("#editorial").css('color','black')
+        $("#misc").css('background-color','transparent')
+        $("#misc").css('color','black')
 
         $("#aboutPg").css('display', 'none')
+        $("#miscPg").css('display','none')
         $("#editorialPg").css('display', 'none')
 
         $("#joePg").css('display','none')
@@ -276,6 +306,41 @@ $("#web").click(function(){
     }
 
 })
+
+$("#misc").click(function(){
+
+$("#miscPg").toggle()
+
+    if($('#miscPg').is(':visible')){
+
+        $("#editorialPg").css('opacity', '100%')
+        $("#webPg").css('opacity', '100%')
+
+        $("#misc").css('background-color','blue')
+        $("#misc").css('color','white')
+
+         $("#aboutPg").css('display', 'none')
+         $("#editorialPg").css('display','none')
+         $("#webPg").css('display', 'none')
+
+         $("#joePg").css('display','none')
+        $('#commandPg').css('display','none')
+
+         $("#web").css('background-color','transparent')
+         $("#web").css('color','black')
+             $("#editorial").css('background-color','transparent')
+             $("#editorial").css('color','black')
+
+         $("#about").css('background-color','transparent')
+        $("#about").css('color','black')
+
+        }else{
+
+            $("#misc").css('background-color','transparent')
+            $("#misc").css('color','black')
+
+        }
+});
 
 </script>
     

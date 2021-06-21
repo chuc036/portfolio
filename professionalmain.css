@@ -268,3 +268,20 @@ a:hover{
   margin-bottom:2%;
   margin: 0 auto
 }
+
+#miscPg{
+  width: 50%;
+  height: 95%;
+  left: 40%;
+  top: 5%;
+  overflow-y: auto;
+  position: relative;
+  display: none;
+}
+
+.video{
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+}
+
